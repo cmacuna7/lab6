@@ -3,7 +3,7 @@
  * @param {number} n - Número entero no negativo
  * @returns {number} El factorial de n
  */
-export function factorial(n) {
+function factorial(n) {
     if (n < 0) {
         throw new Error('El factorial no está definido para números negativos');
     }
@@ -22,7 +22,7 @@ export function factorial(n) {
  * @param {number} n - Posición en la secuencia de Fibonacci (0-indexado)
  * @returns {number} El n-ésimo número de Fibonacci
  */
-export function fibonacci(n) {
+function fibonacci(n) {
     if (n < 0) {
         throw new Error('El índice de Fibonacci no puede ser negativo');
     }
@@ -41,3 +41,5 @@ export function fibonacci(n) {
     }
     return b;
 }
+
+module.exports = { factorial, fibonacci };
