@@ -5,8 +5,8 @@ describe('Función factorial', () => {
         expect(factorial(0)).toBe(1);
     });
 
-    test('factorial(1) debe retornar 1', () => { //FALLO INTENCIONAL
-        expect(factorial(1)).toBe(2);
+    test('factorial(1) debe retornar 1', () => { //SIN FALLO
+        expect(factorial(1)).toBe(1);
     });
 
     test('factorial(5) debe retornar 120', () => {
