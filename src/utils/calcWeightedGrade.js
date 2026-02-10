@@ -1,10 +1,6 @@
 //calcWeightedGrade(items)
 //Calcula una nota final ponderada a partir de componentes con peso.
 
-//items: arreglo de objetos {score: número 0–100, weight: número 0–1}.
-//Suma de weight = 1 con tolerancia ±0.001; si no, RangeError.
-//Devuelve nota 0–100 con 2 decimales.
-//Validar tipos/rangos; lanzar TypeError/RangeError según corresponda.*
 function calcWeightedGrade(items) {
   if (!Array.isArray(items)) {
     throw new TypeError("El input debe ser un arreglo de elementos.");
