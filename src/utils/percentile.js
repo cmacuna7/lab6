@@ -3,8 +3,8 @@
 
 
 function percentile(p, values) {
-  if (typeof p !== "number" || !Array.isArray(values)) {
-    throw new TypeError("p debe ser un número y values debe ser un arreglo.");
+  if (typeof p !== 'number' || !Array.isArray(values)) {
+    throw new TypeError('p debe ser un número y values debe ser un arreglo.');
   }
     if (p < 0 || p > 100) {
     throw new RangeError("p debe estar entre 0 y 100.");
