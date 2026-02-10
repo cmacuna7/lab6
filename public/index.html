@@ -1,13 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CI + Hosting Estatico</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Perfil — Clima & Conversión</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #f4f7fb;
+      color: #333;
+      text-align: center;
+    }
+    header, footer {
+      background-color: #652D8E;
+      color: white;
+      padding: 1rem;
+    }
+    main {
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h1 {
+      margin-bottom: 1rem;
+    }
+    p {
+      line-height: 1.5;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      background: #e8f0fe;
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 <body>
-    <h1>!Sitio Estatico! </h1>
-    <p id="out"></p>
-    <script src="app.js"></script>
+  <header>
+    <h1>Perfil — Notas & Estadística</h1>
+  </header>
+  
+  <main>
+    <h2>Christian Marcelo Acuña Gamboa</h2>
+    <p><strong>NRC:</strong> 27854 | <strong>Correo:</strong> cmacuna@espe.edu.ec</p>
+    <p>
+      Hola mi nombre es Marcelo Acuña, tengo 24 años y soy estudiante de la carrera de Ingeniería en Software en la Universidad de las Fuerzas Armadas ESPE. <br>
+      Me gusta mucho la programación, especialmente el desarrollo web, aunque también me esta gustando el analisis de database<br>
+      En mi tiempo libre me gusta ver películas, jugar videojuegos y jugar con mis gatos <br>
+    </p>
+    <table style="width:100%; border-collapse: collapse; margin-top: 1rem;">
+      <tr>
+        <th style="border: 1px solid #ddd; padding: 8px;">Asignatura</th>
+        <th style="border: 1px solid #ddd; padding: 8px;">Calificación</th>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 8px;">Programación Web</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">10</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 8px;">Análisis de Datos</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">8</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 8px;">Estructuras de Datos</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">9</td>
+      </tr>
+  </main>
+  
+  <footer>
+    <p>© 2025 Notas & Estadística - Examen Pruebas</p>
+  </footer>
 </body>
 </html>

@@ -23,9 +23,18 @@ jobs:
       - name: Lint del código
         run: npm run lint
 
-      - name: Ejecutar pruebas
-        run: npm test
+      - name: Ejecutar pruebas con cobertura
+        run: npm test -- --coverage
 
-      - name: Build
-        run: npm ci && npm run build
-         
+      - name: Auditoría de seguridad
+        run: npm audit --audit-level=high
+
+#  - name: Deploy to Firebase Hosting
+#        # Solo se despliega si es un push a la rama main
+#        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+#        uses: FirebaseExtended/action-hosting-deploy@v0
+#        with:
+#          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+#          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_LAB6_CD_F416D }}'
+#          channelId: live
+#          projectId: lab6-cd-f416d
