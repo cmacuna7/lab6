@@ -7,14 +7,14 @@ function percentile(p, values) {
     throw new TypeError('p debe ser un número y values debe ser un arreglo.');
   }
     if (p < 0 || p > 100) {
-    throw new RangeError("p debe estar entre 0 y 100.");
+    throw new RangeError('p debe estar entre 0 y 100.');
     }
     if (values.length < 1) {
-    throw new RangeError("values debe contener al menos un número.");
+    throw new RangeError('values debe contener al menos un número.');
     }
     for (const val of values) {
-    if (typeof val !== "number") {
-      throw new TypeError("Todos los elementos de values deben ser números.");
+    if (typeof val !== 'number') {
+      throw new TypeError('Todos los elementos de values deben ser números.');
     }
   }
     const sorted = [...values].sort((a, b) => a - b);

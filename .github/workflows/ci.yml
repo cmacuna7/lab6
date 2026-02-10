@@ -23,11 +23,11 @@ jobs:
       - name: Lint del código
         run: npm run lint
 
-      - name: Ejecutar pruebas
-        run: npm test
+      - name: Ejecutar pruebas con cobertura
+        run: npm test -- --coverage
 
-      - name: Build
-        run: npm ci && npm run build
+      - name: Auditoría de seguridad
+        run: npm audit --audit-level=high
 
 #  - name: Deploy to Firebase Hosting
 #        # Solo se despliega si es un push a la rama main
